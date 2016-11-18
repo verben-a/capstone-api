@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" /> -->
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
@@ -19,19 +19,27 @@
     <main>
         <div class="row">
             <div class="col-6">
-                <div class="box price-map">
-                    <iframe src="//maps.avs.io/flights/?auto_fit_map=true&hide_sidebar=true&hide_reformal=true&disable_googlemaps_ui=true&zoom=3&show_filters_icon=true&redirect_on_click=true&small_spinner=true&hide_logo=false&direct=false&lines_type=TpLines&cluster_manager=TpWidgetClusterManager&marker=69337.map&show_tutorial=false&locale=en&host=map.jetradar.com" width="450px" height="400px" scrolling="no" frameborder="0"></iframe>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="box accomodation-search">
+                <div class="box origin-location">
+                <div>
+                <p>Choose the airport</p>
                     <form action="#" class="js-search-form">
                         <label for="query"></label>
                         <input type="text" class="js-query" id="search" placeholder="Departure airport">
-                        <input placeholder="date of travel" type="text" name="daterange" class="js-query">
+                        </div>
+                        <br />
+                        <div>
+                        <p>Pick up the date</p>
+                        <input placeholder="YYYY-MM-DD" type="date" name="flightdate" class="js-query">
+                        <!-- <input type="text" name="birthdate" value="10/24/1984" /> -->
+                        </div>
+                        <br />
                         <button type="submit">Search</button>
                     </form>
-                    
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="box display-results">
+                   
                     <div class="results">
                     </div>
                 </div>
@@ -39,8 +47,8 @@
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script> -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script> -->
     <script src="app.js"></script>
 </body>
 
