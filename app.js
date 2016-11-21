@@ -2,16 +2,34 @@
 // are the same
 //$(document).ready(function() {
 
+
+
+
 $(document).ready(function() {
+
+
+
 
     /// write date range event here (it is a little separate)
 
+
+
+
     // $('input[name="flightdate"]').daterangepicker();
+
+
+
 
     // form code below is for when you actually submit the form (not selecting a date)
 
+
+
+
     $('form').submit(function(event) {
         event.preventDefault();
+
+
+
 
         var request = {
             origin_iata: $('#search').val(),
@@ -23,6 +41,8 @@ $(document).ready(function() {
             need_visa: false,
             locale: 'EN'
         };
+
+
 
 
         $.getJSON("http://map.aviasales.ru/prices.json", request).done(function(results) {
@@ -54,9 +74,19 @@ $(document).ready(function() {
         });
 
 
+
+
+
+
+
+
     });
 });
 
 
 
-// $('input[name="daterange"]').val().split('-')[0].replace(/\s/g, '').replace('/', '-').replace('/', '-')
+
+
+
+
+

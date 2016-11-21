@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+
+
+
 <head>
     <title>Your cheapest vacation</title>
     <meta charset="utf-8">
@@ -13,23 +16,32 @@
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
 </head>
 
+
+
+
 <body>
     <header>
-        <h1>Your Flight Finder</h1>
+        <h1>Your Flight Finder. <em>Choose your starting point and we'll show you chepest destinations!</em></h1>
+        
     </header>
     <main>
         <div class="row">
             <div class="col-6">
                 <div class="box origin-location">
                 <div>
-                <p>Choose the airport</p>
+                
                     <form action="#" class="js-search-form">
+                    <thead>Choose the airport</thead>
+                    <br />
+                    <br />
                         <label for="query"></label>
                         <input type="text" class="js-query" id="search" placeholder="Departure airport">
                         </div>
                         <br />
                         <div>
-                        <p>Pick up the date</p>
+                        <thead>Pick up the date</thead>
+                        <br />
+                        <br />
                         <input placeholder="YYYY-MM-DD" type="date" name="flightdate" class="js-query">
                         <!-- <input type="text" name="birthdate" value="10/24/1984" /> -->
                         </div>
@@ -58,4 +70,11 @@
     <script src="app.js"></script>
 </body>
 
+
+
+
 </html>
+
+
+
+
