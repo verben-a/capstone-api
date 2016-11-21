@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <title>Your cheapest vacation</title>
     <meta charset="utf-8">
@@ -10,25 +11,33 @@
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" /> -->
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
 </head>
+
 
 <body>
     <header>
-        <h1>Your Flight Finder</h1>
+        <h1>Your Flight Finder. <em>Choose your starting point and we'll show you chepest destinations!</em></h1>
+        
     </header>
     <main>
         <div class="row">
             <div class="col-6">
                 <div class="box origin-location">
                 <div>
-                <p>Choose the airport</p>
+                
                     <form action="#" class="js-search-form">
+                    <thead>Choose the airport</thead>
+                    <br />
+                    <br />
                         <label for="query"></label>
                         <input type="text" class="js-query" id="search" placeholder="Departure airport">
                         </div>
                         <br />
                         <div>
-                        <p>Pick up the date</p>
+                        <thead>Pick up the date</thead>
+                        <br />
+                        <br />
                         <input placeholder="YYYY-MM-DD" type="date" name="flightdate" class="js-query">
                         <!-- <input type="text" name="birthdate" value="10/24/1984" /> -->
                         </div>
@@ -40,16 +49,22 @@
             <div class="col-6">
                 <div class="box display-results">
                    
-                    <div class="results">
-                    </div>
+                    <table class="results">
+                        <thead><tr><th>Destination</th><th>Price (USD)</th></tr></thead>
+                        <tbody class='results-body'></tbody>
+                    </table> 
+                    
                 </div>
             </div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="money.js"></script>
+    <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script> -->
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script> -->
     <script src="app.js"></script>
 </body>
+
 
 </html>
