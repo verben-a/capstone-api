@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html>
 
-
-
-
 <head>
-    <title>Your cheapest vacation</title>
+    <title>Travelpayouts API | Your cheapest flight</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" /> -->
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
 </head>
 
-
-
-
 <body>
     <header>
-        <h1>Your Flight Finder. <em>Choose your starting point and we'll show you chepest destinations!</em></h1>
-        
+        <h1>Your Flight Finder</h1>
+        <p><em>Choose your starting point and we'll show you cheapest destinations!</em></p>
     </header>
     <main>
         <div class="row">
             <div class="col-6">
                 <div class="box origin-location">
                 <div>
-                
                     <form action="#" class="js-search-form">
-                    <thead>Choose the airport</thead>
+                    <thead>Step 1. Choose the airport</thead>
                     <br />
                     <br />
                         <label for="query"></label>
@@ -39,11 +30,10 @@
                         </div>
                         <br />
                         <div>
-                        <thead>Pick up the date</thead>
+                        <thead>Step 2. Pick up the date</thead>
                         <br />
                         <br />
                         <input placeholder="YYYY-MM-DD" type="date" name="flightdate" class="js-query">
-                        <!-- <input type="text" name="birthdate" value="10/24/1984" /> -->
                         </div>
                         <br />
                         <button type="submit">Search</button>
@@ -65,12 +55,8 @@
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="money.js"></script>
     <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script> -->
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script> -->
     <script src="app.js"></script>
 </body>
-
-
 
 
 </html>

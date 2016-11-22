@@ -1,67 +1,32 @@
 * {
   box-sizing: border-box;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  /*background-color: #311B92;*/
+  font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+
 }
 
-
-body::before {
-    background-size: cover;
-    background-attachment: fixed;
-    content: '';
-    will-change: transform;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: fixed;
+body {
+  background-image: url('https://images.unsplash.com/photo-1468956332313-2dcf1542828f?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
 }
-@media (max-width: 512px)  and (min-resolution: 1.5dppx),
-       (max-width: 1024px) and (max-resolution: 1.5dppx) {
-  body::before {
-    background-image: url('https://images.unsplash.com/photo-1468956332313-2dcf1542828f?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
-  }
-}
-@media (min-width: 513px)  and (max-width: 1024px) and (min-resolution: 1.5dppx),
-       (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
-  body::before {
-    background-image: url('https://images.unsplash.com/photo-1468956332313-2dcf1542828f?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
-  }
-}
-@media (min-width: 1025px) and (min-resolution: 1.5dppx),
-       (min-width: 2049px) and (max-resolution: 1.5dppx) {
-  body::before {
-    background-image: url('https://images.unsplash.com/photo-1468956332313-2dcf1542828f?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
-  }
-
-
-
 
 h1 {
   color: white;
   margin-left: 70px;
-  margin-top: 70px;
+  margin-right: 70px;
+  margin-top: 40px;
 }
-
 
 p {
-  color: white;
-  margin-left: 70px;
-  margin-top: 50px;
-  font-style: italic;
+  color: #ff7b29;
   font-size: 22px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
-
-
-
 main {
-  margin-top: 100px;
+  margin-top: 70px;
   font-weight: bold;
   font-size: 16px;
 }
-
 
 .row {
   max-width: 1000px;
@@ -112,16 +77,20 @@ input {
 
 
 button {
-  background-color: #607D8B !important;
+  background-color: #607D8B;
   color: white;
   border: none;
   border-radius: 2px;
   padding: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  transition-property: background;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
 }
 
-
-
+button:hover {
+  background: #ff7b29;
+}
 
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
